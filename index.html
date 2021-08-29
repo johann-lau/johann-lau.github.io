@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>SuperBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" id="mystyle" href="style.css">
+  <base target="_blank">
+</head>
+
+<body onload=setcolor()>
+  <script>
+    var bgcolor = localStorage.getItem('b') || "#ffffff";
+    var focolor = localStorage.getItem('f') || "#000000";
+    var mysheet = document.getElementById("mystyle").sheet;
+    var scache = 1;
+    var a1p = true;
+    var shown = false;
+    var a;
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var item = localStorage.getItem('item') || "";
+  </script>
+  <h1>SuperBot Official Website</h1>
+
+  <p class="par">&#x2460; Change the theme! Click on the buttons to load the harmonic presets or press on the squares to fully customize
+    the experience.</p>
+
+  <div>
+    <div style="width:30%; float: left;" float="left">
+      <input type="color" class="colors" id="bgc" value="#ffffff">
+      <input type="color" class="colors" id="fgc" value="#000000">
+    </div>
+    <br>
+    <div style="width:70%; float: right;" float="right">
+      <button type="button" onclick="theme(0,0,false)" class="mybutton rbutton button1">White</button>
+      <button type="button" onclick="theme(1,1,true)" class="mybutton rbutton button1">Light</button>
+      <button type="button" onclick="theme(1,1,false)" class="mybutton rbutton button1">Dark</button>
+      <button type="button" onclick="theme(0,0,true)" class="mybutton rbutton button1">Black</button>
+    </div>
+  </div>
+  <br>
+
+  <script>
+    blist = ["#FFFFFF", "#37393E", "#76D3F9", "#7DA8F7", "#AA90F7", "#D798F8", "#DE799D", "#F19286", "#F3A884", "#F7C783", "#FAD885", "#FFF8A2", "#EDF29B", "#BADD95"];
+    flist = ["#000000", "#DCDDDE", "#1D4C63", "#0A3075", "#170F4F", "#3F1556", "#4F1729", "#791E0E", "#732F10", "#744C16", "#74581A", "#8C8529", "#717524", "#3F5623"];
+  </script>
+
+  <div style="width:100%; float: right;" float="right">
+    <button type="button" onclick="theme(2,2,false)" class="mybutton mbutton button1">Blue</button>
+    <button type="button" onclick="theme(3,3,false)" class="mybutton mbutton button1">Ocean</button>
+    <button type="button" onclick="theme(4,4,false)" class="mybutton mbutton button1">Purple</button>
+    <button type="button" onclick="theme(5,5,false)" class="mybutton mbutton button1">Violet</button>
+    <button type="button" onclick="theme(6,6,false)" class="mybutton mbutton button1">Pink</button>
+    <button type="button" onclick="theme(7,7,false)" class="mybutton mbutton button1">Red</button>
+    <button type="button" onclick="theme(8,8,false)" class="mybutton mbutton button1">Orange</button>
+    <button type="button" onclick="theme(9,9,false)" class="mybutton mbutton button1">Tan</button>
+    <button type="button" onclick="theme(10,10,false)" class="mybutton mbutton button1">Gold</button>
+    <button type="button" onclick="theme(11,11,false)" class="mybutton mbutton button1">Yellow</button>
+    <button type="button" onclick="theme(12,12,false)" class="mybutton mbutton button1">Olive</button>
+    <button type="button" onclick="theme(13,13,false)" class="mybutton mbutton button1">Green</button>
+    <br>
+    <button type="button" onclick="theme(2,2,true)" class="mybutton mbutton button1">Blue</button>
+    <button type="button" onclick="theme(3,3,true)" class="mybutton mbutton button1">Ocean</button>
+    <button type="button" onclick="theme(4,4,true)" class="mybutton mbutton button1">Purple</button>
+    <button type="button" onclick="theme(5,5,true)" class="mybutton mbutton button1">Violet</button>
+    <button type="button" onclick="theme(6,6,true)" class="mybutton mbutton button1">Pink</button>
+    <button type="button" onclick="theme(7,7,true)" class="mybutton mbutton button1">Red</button>
+    <button type="button" onclick="theme(8,8,true)" class="mybutton mbutton button1">Orange</button>
+    <button type="button" onclick="theme(9,9,true)" class="mybutton mbutton button1">Tan</button>
+    <button type="button" onclick="theme(10,10,true)" class="mybutton mbutton button1">Gold</button>
+    <button type="button" onclick="theme(11,11,true)" class="mybutton mbutton button1">Yellow</button>
+    <button type="button" onclick="theme(12,12,true)" class="mybutton mbutton button1">Olive</button>
+    <button type="button" onclick="theme(13,13,true)" class="mybutton mbutton button1">Green</button>
+  </div>
+  <br>
+  <script>
+    bg = document.getElementById('bgc')
+    bg.addEventListener("change", BGc, false);
+    fg = document.getElementById('fgc')
+    fg.addEventListener("change", FGc, false);
+
+    function BGc(event) {
+      bgcolor = event.target.value;
+      setcolor();
+    }
+
+    function FGc(event) {
+      focolor = event.target.value;
+      setcolor();
+    }
+
+    function setcolor() {
+      bg.value = bgcolor;
+      fg.value = focolor;
+      document.body.style.backgroundColor = bgcolor;
+      document.getElementsByTagName('body')[0].style.color = focolor;
+      console.log(mysheet.cssRules)
+      mysheet.deleteRule(mysheet.cssRules.length - 1);
+      mysheet.deleteRule(mysheet.cssRules.length - 1);
+      mysheet.deleteRule(mysheet.cssRules.length - 1);
+      mysheet.insertRule(`
+#bgc {
+width:7vw;
+height: 7vw;
+border-style: solid;
+border-color: ` + focolor + `;
+background-color: ` + bgcolor + `;
+border-width:4px;
+}
+`, mysheet.cssRules.length);
+      mysheet.insertRule(`
+#fgc {
+width:7vw;
+height: 7vw;
+border-style: solid;
+border-color: ` + bgcolor + `;
+background-color: ` + focolor + `;
+border-width:4px;
+}
+`, mysheet.cssRules.length);
+      mysheet.insertRule(`
+.button1 {
+color: ` + focolor + `;
+border-color: ` + focolor + `;
+background-color: ` + bgcolor + `;
+}
+`, mysheet.cssRules.length);
+      mysheet.insertRule(`
+.button1:hover {
+color: ` + bgcolor + `;
+border-color: ` + focolor + `;
+background-color: ` + focolor + `;
+}
+`, mysheet.cssRules.length);
+      localStorage.setItem('b', bgcolor);
+      localStorage.setItem('f', focolor);
+    }
+    function theme(bgindex, foindex, inverted) {
+      if (inverted) {
+        bgcolor = flist[bgindex];
+        focolor = blist[foindex];
+      } else {
+        bgcolor = blist[bgindex];
+        focolor = flist[foindex];
+      }
+      setcolor();
+    }
+  </script>
+</body>
+
+</html>
