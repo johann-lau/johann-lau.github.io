@@ -55,6 +55,11 @@ td, .small {
   font-size: 2vw;
 }
 
+table {
+  text-align: center;
+  width: 100%;
+}
+
 .cardl {
   width: 20%;
   height: inherit;

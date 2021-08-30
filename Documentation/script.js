@@ -64,6 +64,7 @@ mysheet.insertRule(`
 `, mysheet.cssRules.length);
 mysheet.insertRule(`
 table, th, td {
+  table-layout: fixed;
   border-style: solid;
   border-width: 0.1vw;
   border-color: `+ focolor + ";}", mysheet.cssRules.length);
