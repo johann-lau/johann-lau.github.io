@@ -4,32 +4,51 @@
 }
 
 html {
+  font-family: SF, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   position: relative;
 }
 
-.par {
-  font-family: SF, Arial, Helvetica, sans-serif;
-  font-size: 2.8vw;
+h1 {
+  font-size: 5.5vw;
 }
 
-html body h1 {
-  font-family: SF, Arial, Helvetica, sans-serif;
-  font-size: 5vw;
+h2 {
+  font-size: 4.5vw;
 }
 
-.selector {
-  font-family: monospace;
+p {
+  font-size: 2.6vw;
 }
 
-.mybutton {
-  font-family: SF, Arial, Helvetica, sans-serif;
-  text-align: center;
-  display: inline-block;
-  margin: 0.25vw 0.5vw;
-  border-style: solid;
-  transition-duration: 0.4s;
-  cursor: pointer;
+.small {
+  font-size: 2vw;
+}
+
+.cardl {
+  width: 20%;
+  height: inherit;
+  float: left;
+}
+
+.card1 {
+  font-size: 4vw;
+  margin-top: 1.5vw;
+}
+
+.cardr {
+  width: 80%;
+  height: inherit;
+  float: right;
+}
+
+.card2 {
+  font-size: 2vw;
+  margin-top: 0px;
+}
+
+.beta {
+  color: #c00;
 }
 
 .rbutton {
@@ -53,8 +72,9 @@ html body h1 {
   height: 96px;
   border-style: solid;
   border-color: #000;
+  border-radius: 1vw;
   background-color: #fff;
-  border-width: 4px;
+  border-width: 0.5vw;
 }
 
 #fgc {
@@ -62,18 +82,32 @@ html body h1 {
   height: 96px;
   border-style: solid;
   border-color: #fff;
+  border-radius: 1vw;
   background-color: #000;
-  border-width: 4px;
+  border-width: 0.5vw;
 }
 
-.button1 {
+button {
+  text-align: center;
+  display: inline-block;
+  margin: 0.25vw 0.5vw;
+  border-style: solid;
+  transition-duration: 0.4s;
+  cursor: pointer;
   color: #000;
   border-color: #4c56af;
   background-color: #fff;
 }
 
-.button1:hover {
+button:hover {
   color: #fff;
   border-color: #4c56af;
   background-color: #4c56af;
+}
+
+.card {
+  height: 8vw;
+  border-style: solid;
+  border-radius: 0.6vw;
+  border-color: #000;
 }
