@@ -23,9 +23,13 @@ function setcolor() {
   fg.value = focolor;
   document.body.style.backgroundColor = bgcolor;
   document.getElementsByTagName('body')[0].style.color = focolor;
-  for (var i=1; i<5; i++) {
+  for (var i = 1; i < 6; i++) {
     mysheet.deleteRule(mysheet.cssRules.length - 1);
   }
+  mysheet.insertRule(`
+.inverted {
+background-color: ` + focolor + `;
+color: `+ bgcolor + "}", mysheet.cssRules.length);
   mysheet.insertRule(`
 #bgc {
 width:7vw;
@@ -73,7 +77,8 @@ background-color: ` + focolor + `;
   height: 8vw;
   border-style: solid;
   border-radius: 0.6vw;
-  border-color: `+ focolor +`;
+  border-color: `+ focolor + `;
+  margin-top: 4vw;
 }
 `, mysheet.cssRules.length);
   localStorage.setItem('b', bgcolor);
