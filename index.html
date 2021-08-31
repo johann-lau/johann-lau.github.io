@@ -12,25 +12,11 @@
 <body onload=setcolor()>
   <h1>SuperBot Official Website</h1>
 
-  <p>Change the theme! Click on the buttons to load the harmonic presets or press on the squares to fully
-    customize the experience.</p>
-
-  <div>
-    <div style="width:20%; float: left;">
-      <input type="color" class="colors" id="bgc" value="#ffffff">
-      <input type="color" class="colors" id="fgc" value="#000000">
-    </div>
-    <br>
-    <div style="width:80%; float: right;">
-      <button type="button" onclick="theme(0,0,false)" class="rbutton">White</button>
-      <button type="button" onclick="theme(1,1,true)" class="rbutton">Light</button>
-      <button type="button" onclick="theme(1,1,false)" class="rbutton">Dark</button>
-      <button type="button" onclick="theme(0,0,true)" class="rbutton">Black</button>
-    </div>
-  </div>
-  <br>
+  <p>Change the theme!</p>
 
   <div style="width:100%; float: right;">
+    <button type="button" onclick="theme(0,0,false)" class="mbutton">White</button>
+    <button type="button" onclick="theme(1,1,true)" class="mbutton">Light</button>
     <button type="button" onclick="theme(2,2,false)" class="mbutton">Blue</button>
     <button type="button" onclick="theme(3,3,false)" class="mbutton">Ocean</button>
     <button type="button" onclick="theme(4,4,false)" class="mbutton">Purple</button>
@@ -43,6 +29,8 @@
     <button type="button" onclick="theme(11,11,false)" class="mbutton">Yellow</button>
     <button type="button" onclick="theme(12,12,false)" class="mbutton">Olive</button>
     <button type="button" onclick="theme(13,13,false)" class="mbutton">Green</button><br>
+    <button type="button" onclick="theme(0,0,true)" class="mbutton">Black</button>
+    <button type="button" onclick="theme(1,1,false)" class="mbutton">Dark</button>
     <button type="button" onclick="theme(2,2,true)" class="mbutton">Blue</button>
     <button type="button" onclick="theme(3,3,true)" class="mbutton">Ocean</button>
     <button type="button" onclick="theme(4,4,true)" class="mbutton">Purple</button>
@@ -63,7 +51,8 @@
   <p>Check whether the bot is online:<span class="code inverted">=ping</span></p><br>
   <p>Join the support server!<span class="code inverted">=server</span></p><br>
   <p>Invite the bot to other servers!<span class="code inverted">=invite</span></p><br>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation'" class="rbutton">All commands</button>
+  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation'"
+    class="rbutton">All commands</button>
   <h2>What's on?</h2>
   <div class="card">
     <div class="cardl">

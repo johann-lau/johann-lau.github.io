@@ -94,9 +94,10 @@ table {
 .mbutton {
   width: 6vw;
   font-size: 1.3vw;
-  padding: 0.2vw 0.125vw;
+  padding: 0.2vw 0.1vw;
   border-radius: 0.6vw;
   border-width: 0.3vw;
+  margin: 0.5vw 0.3vw;
 }
 
 body, a {
@@ -109,26 +110,6 @@ body, a {
 .inverted {
   background-color: #000;
   color: #fff
-}
-
-#bgc {
-  width: 96px;
-  height: 96px;
-  border-style: solid;
-  border-color: #000;
-  border-radius: 1vw;
-  background-color: #fff;
-  border-width: 0.5vw;
-}
-
-#fgc {
-  width: 96px;
-  height: 96px;
-  border-style: solid;
-  border-color: #fff;
-  border-radius: 1vw;
-  background-color: #000;
-  border-width: 0.5vw;
 }
 
 button {
