@@ -12,28 +12,80 @@
 <body>
   <script src="./script.js"></script>
   <h1>SuperBot Official Documentation</h1>
-  <table style="width: 125%;">
+  <table style="width: 205%;">
     <colgroup>
       <col span="1" style="width: 15%;">
+      <col span="1" style="width: 30%;">
       <col span="1" style="width: 70%;">
-      <col span="1" style="width: 40%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 30%;">
     </colgroup>
 
     <tr>
-      <th>Command</th>
-      <th>Description</th>
-      <th>Alias</th>
+      <th class="big" colspan="6">Basic commands</th>
     </tr>
+
+    <tr>
+      <th rowspan="2">Command</th>
+      <th rowspan="2">Argument(s)</th>
+      <th rowspan="2">Description</th>
+      <th rowspan="2">Alias(es)</th>
+      <th colspan="2">Permissions required<a href="#footnote-1"><sup>1</sup></a></th>
+    </tr>
+
+    <tr>
+      <th>By bot</th>
+      <th>By you</th>
+    </tr>
+
     <tr>
       <td class="code">help</td>
+      <td></td>
       <td>View a list of commands. Does not support in-depth help.</td>
+      <td><span class="code">commands</span></td>
+      <td rowspan="2">Embed links</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="code">invite</td>
+      <td></td>
+      <td>Sends a link for you to invite the bot to your own server.</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="code">prefix</td>
+      <td></td>
+      <td>Reminds you of the prefix of the bot (Equal sign <span class="code">=</span>).</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
 
     <tr>
       <td class="code">ping</td>
+      <td></td>
       <td>Checks whether the bot is online and tells you the response speed.</td>
+      <td><span class="code">status</span><span class="code">online</span></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="code">botpurge</td>
+      <td>No. of messages to delete</td>
+      <td>Deletes the most recent message(s) sent by the bot. Useful for cleanup.</td>
+      <td></td>
+      <td></td>
+      <td>Manage messages</td>
     </tr>
   </table>
+  <br>
+
+  <p id="footnote-1"><sup>1</sup> Most commands require send messages permission to work.</p>
 </body>
 
 </html>

@@ -4,9 +4,20 @@ var mysheet = document.getElementById("mystyle").sheet;
 
 document.body.style.backgroundColor = bgcolor;
 document.getElementsByTagName('body')[0].style.color = focolor;
+links = document.getElementsByTagName('a')
+for (var i = 0; i < links.length; i++) {
+  links[i].style.color = focolor;
+}
 for (var i = 1; i < 6; i++) {
   mysheet.deleteRule(mysheet.cssRules.length - 1);
 }
+mysheet.insertRule(`
+body, a {
+  color: `+focolor+`;
+  font-family: Font1, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}`, mysheet.cssRules.length)
 mysheet.insertRule(`
 .inverted {
 background-color: ` + focolor + `;
@@ -24,7 +35,7 @@ border-width:0.5vw;
 `, mysheet.cssRules.length);
 mysheet.insertRule(`
 #fgc {
-width:7vw;
+width: 7vw;
 height: 7vw;
 border-style: solid;
 border-color: ` + bgcolor + `;

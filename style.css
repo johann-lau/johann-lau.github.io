@@ -8,12 +8,6 @@
   src: url("font2.ttf") format("truetype");
 }
 
-html {
-  font-family: Font1, Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-  position: relative;
-}
-
 .code {
   font-family: Font2, monospace;
   font-size: 2.2vw;
@@ -53,6 +47,10 @@ p, th {
 
 td, .small {
   font-size: 2vw;
+}
+
+.big {
+  font-size: 4vw;
 }
 
 table {
@@ -101,9 +99,16 @@ table {
   border-width: 0.3vw;
 }
 
+body, a {
+  color: #000;
+  font-family: Font1, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
 .inverted {
-background-color: #000;
-color: #fff
+  background-color: #000;
+  color: #fff
 }
 
 #bgc {
