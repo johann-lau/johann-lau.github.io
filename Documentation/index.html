@@ -5,11 +5,18 @@
 <head>
   <title>SuperBot Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" id="mystyle" href="../style.css">
+  <link rel="stylesheet" id="mystyle" href="/style.css">
   <base target="_blank">
 </head>
 
 <body>
+  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
+    class="button3 rbutton">How to supply arguments?</button>
+  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
+    class="button3 rbutton">How to supply arguments?</button>
+  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
+    class="button3 rbutton">How to supply arguments?</button>
+
   <script src="./script.js"></script>
   <h1>SuperBot Official Documentation</h1>
   <table style="width: 205%;">
@@ -31,7 +38,7 @@
       <th rowspan="2">Argument(s)</th>
       <th rowspan="2">Description</th>
       <th rowspan="2">Alias(es)</th>
-      <th colspan="2">Permissions required<a href="#footnote-1"><sup>1</sup></a></th>
+      <th colspan="2">Permissions required</th>
     </tr>
 
     <tr>
@@ -95,7 +102,7 @@
       <th rowspan="2">Argument(s)</th>
       <th rowspan="2">Description</th>
       <th rowspan="2">Alias(es)</th>
-      <th colspan="2">Permissions required<a href="#footnote-1"><sup>1</sup></a></th>
+      <th colspan="2">Permissions required</th>
     </tr>
 
     <tr>
@@ -175,7 +182,7 @@
 
     <tr>
       <td class="code">emojiinfo</td>
-      <td>(Custom) emoji (in the server)</td>
+      <td>Custom or Unicode emoji</td>
       <td>Views information about the custom/unicode emoji.</td>
       <td>Embed links, manage emojis*</td>
     </tr>
@@ -183,13 +190,81 @@
     <tr>
       <td class="code">template</td>
       <td>Template in the server</td>
-      <td><span class="inverted">Broken currently</span></td>
+      <td>Views information about the server template.</td>
       <td>Embed links</td>
     </tr>
 
   </table>
 
-  <p id="footnote-1"><sup>1</sup> Most commands require send messages permission to work.</p>
+  <br><br>
+
+  <table style="width: 205%;">
+    <colgroup>
+      <col span="1" style="width: 15%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 70%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 30%;">
+    </colgroup>
+
+    <tr>
+      <th class="big" colspan="6">Discord commands</th>
+    </tr>
+
+    <tr>
+      <th rowspan="2">Command</th>
+      <th rowspan="2">Argument(s)</th>
+      <th rowspan="2">Description</th>
+      <th rowspan="2">Alias(es)</th>
+      <th colspan="2">Permissions required</th>
+    </tr>
+
+    <tr>
+      <th>By bot</th>
+      <th>By you</th>
+    </tr>
+
+    <tr>
+      <td class="code">react</td>
+      <td>Message, <em>Custom</em> Emoji</td>
+      <td>Temporarily reacts with the emoji. Useful when replacing Nitro.</td>
+      <td></td>
+      <td>Add emojis</td>
+      <td rowspan="2"></td>
+    </tr>
+
+    <tr>
+      <td class="code" rowspan="2">snipe</td>
+      <td></td>
+      <td>Fetches the 5 most recently deleted messages.</td>
+      <td rowspan="2"><span class="code">sniper</span></td>
+      <td>Embed links, add reactions</td>
+    </tr>
+
+    <tr>
+      <td class="code">0 or 1</td>
+      <td>Enables or disables sniping (storing deleted messages).</td>
+      <td rowspan="2"></td>
+      <td rowspan="2">Manage channel</td>
+    </tr>
+
+    <tr>
+      <td class="code">clearsnipe</td>
+      <td></td>
+      <td>Clears snipe data (deleted messages).</td>
+      <td rowspan="2"></td>
+    </tr>
+
+    <tr>
+      <td class="code">pretend</td>
+      <td>User, Text+</td>
+      <td>Sends a fake message as the user.</td>
+      <td>Manage webhooks</td>
+      <td></td>
+    </tr>
+
+  </table>
 </body>
 
 </html>
