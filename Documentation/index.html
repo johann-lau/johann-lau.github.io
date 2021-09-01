@@ -42,7 +42,7 @@
     <tr>
       <td class="code">help</td>
       <td rowspan="4"></td>
-      <td>View a list of commands. Does not support in-depth help.</td>
+      <td>Sends a list of commands. Does not support in-depth help.</td>
       <td><span class="code">commands</span></td>
       <td rowspan="2">Embed links</td>
       <td rowspan="4"></td>
@@ -106,29 +106,85 @@
     <tr>
       <td class="code">server</td>
       <td rowspan="2"></td>
-      <td>View information about the server: channels, roles, ID and more.</td>
+      <td>Views information about the server: channels, roles, ID and more.</td>
       <td><span class="code">guild</span></td>
-      <td rowspan="4">Embed links</td>
-      <td rowspan="4"></td>
+      <td>Embed links</td>
+      <td rowspan="13"></td>
     </tr>
 
     <tr>
       <td class="code">server mod</td>
-      <td>View moderator information about the server: bans and invite links.</td>
+      <td>Views moderator information about the server: bans and invite links.</td>
       <td><span class="code">guild mod</span></td>
+      <td style="font-size: 1.3vw;">Embed links, manage invites*, ban members*</td>
     </tr>
 
     <tr>
       <td class="code">role</td>
-      <td>Role</td>
-      <td>View information about the role: members, position and more.</td>
-      <td rowspan="2"></td>
+      <td><span class="inverted">Role in the server</span></td>
+      <td>Views information about the role: members, position and more.</td>
+      <td rowspan="6"></td>
+      <td rowspan="9">Embed links</td>
     </tr>
 
     <tr>
       <td class="code">channel</td>
-      <td>Channel</td>
-      <td>View information about the text, voice or stage channel.</td>
+      <td><span class="inverted">Channel in the server</span></td>
+      <td>Views information about the text, voice or stage channel.</td>
+    </tr>
+
+    <tr>
+      <td class="code">user</td>
+      <td rowspan="3"><span class="inverted">User in the server</span></td>
+      <td>Views information about the user: avatar, permissions, status and more.</td>
+    </tr>
+
+    <tr>
+      <td class="code">avatar</td>
+      <td>Views the avatar (user icon) of a user.</td>
+    </tr>
+
+    <tr>
+      <td class="code">status</td>
+      <td>Views in-depth information about the status of the user.</td>
+    </tr>
+
+    <tr>
+      <td class="code">leftuser</td>
+      <td>Any Discord User</td>
+      <td>Views limited information about the user who is not in the server.</td>
+    </tr>
+
+    <tr>
+      <td class="code">message</td>
+      <td rowspan="3">Message in the server</td>
+      <td>Views information about the message: sender, ID and more.</td>
+      <td class="code">msg</td>
+    </tr>
+
+    <tr>
+      <td class="code">raw</td>
+      <td>Views the raw content of the message, including formatting symbols.</td>
+      <td rowspan="4"></td>
+    </tr>
+
+    <tr>
+      <td class="code">reactions</td>
+      <td>Views information and a pie chart about the message's reactions.</td>
+    </tr>
+
+    <tr>
+      <td class="code">emojiinfo</td>
+      <td>(Custom) emoji (in the server)</td>
+      <td>Views information about the custom/unicode emoji.</td>
+      <td>Embed links, manage emojis*</td>
+    </tr>
+
+    <tr>
+      <td class="code">template</td>
+      <td>Template in the server</td>
+      <td><span class="inverted">Broken currently</span></td>
+      <td>Embed links</td>
     </tr>
 
   </table>
