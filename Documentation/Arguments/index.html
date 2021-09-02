@@ -20,8 +20,62 @@
   <script src="../script.js"></script>
   <h1>SuperBot Official Documentation: Supplying Arguments</h1>
 
-  <p>As SuperBot had grown into a complex bot, it is important to document everything, from the large number of commands
-    to one of the most unnoticed parts of them - the arguments.</p>
+  <p>Please see these information on how to provide arguments for the bot to parse.</p>
+
+  <h3>How to supply <span class="code">text</span>?</h3>
+  <p>
+    <span class="code">text</span>is simply a piece of "arbitrary" text which can contain anything but not spaces or
+    straight double quotes(<span class="code">"</span>). For comparison, these are curved double quotes:
+    <span class="code">“</span>and<span class="code">”</span>
+    <br>
+    Examples are <span class="inverted code">100</span>, <span class="inverted code">hello</span>,
+    <span class="inverted code">Good-morning</span>.
+    <br>
+    To bypass the no-space limit, wrap the argument in straight double-quotes:
+    <br>
+    <span class="inverted code">"Good morning"</span>
+  </p>
+
+  <h3>How to supply <span class="code">text*</span>?</h3>
+  <p>
+    <span class="code">text*</span>is different from<span class="code">text</span>. You can provide as many arguments
+    as you want, 1, 2 or 10, separated by spaces. In fact, you can provide no arguments at all (by providing nothing).
+    <br>
+    Examples are<span class="inverted code">argument-1, argument-2, argument 3</span>,<span
+      class="inverted code">only-argument</span>.
+    <br>
+    Similarly, to bypass the no-space limit, wrap the argument in straight double-quotes:
+    <br>
+    <span class="inverted code">argument-1 "Very long argument 2" argument-3</span>
+  </p>
+
+  <h3>How to supply <span class="code">text+</span>?</h3>
+  <p>
+    <span class="code">text+</span>allows you to supply any character, including spaces and quotes. This is always the
+    last argument of each command.
+    <br>
+    You do not need to wrap the argument in double quotes. If you do so, they will be parsed with the quotes.
+  </p>
+
+  <h3>How to supply other Discord objects?</h3>
+  <table style="width: 100%; table-layout: fixed;">
+    <tr>
+      <th>Object</th>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Mention</th>
+      <th>URL</th>
+    </tr>
+
+    <tr>
+      <td>Channel<a href="#f1"><sup>1</sup></a></td>
+      <td>●</td>
+      <td>●</td>
+      <td>●</td>
+      <td></td>
+    </tr>
+
+  </table>
 </body>
 
 </html>

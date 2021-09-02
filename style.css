@@ -37,6 +37,11 @@ h3 {
   font-size: 3.5vw;
   margin-top: 0.2vw;
   margin-bottom: 0.2vw;
+  padding-top: 7vw;
+}
+
+h3 .code {
+  font-size: 3.5vw;
 }
 
 p, th {
