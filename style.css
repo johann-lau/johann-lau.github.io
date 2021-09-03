@@ -152,3 +152,10 @@ table, th, td {
   border-width: 0.1vw;
   border-color: #000;
 }
+
+hr {
+  border-color: #000;
+  width: 98vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}

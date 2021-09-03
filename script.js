@@ -7,13 +7,13 @@ flist = ["#000000", "#DCDDDE", "#1D4C63", "#0A3075", "#170F4F", "#3F1556", "#4F1
 function setcolor() {
   document.body.style.backgroundColor = bgcolor;
   document.getElementsByTagName('body')[0].style.color = focolor;
-  for (var i = 1; i < 6; i++) {
+  for (var i = 1; i < 7; i++) {
     mysheet.deleteRule(mysheet.cssRules.length - 1);
   }
 
-mysheet.insertRule(`
+  mysheet.insertRule(`
 body, a {
-  color: `+focolor+`;
+  color: `+ focolor + `;
   font-family: Font1, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   position: relative;
@@ -24,7 +24,7 @@ body, a {
 background-color: ` + focolor + `;
 color: `+ bgcolor + "}", mysheet.cssRules.length);
 
-mysheet.insertRule(`
+  mysheet.insertRule(`
 button {
 text-align: center;
 display: inline-block;
@@ -48,14 +48,28 @@ background-color: ` + focolor + `;
 
   mysheet.insertRule(`
 .card {
-  height: 8vw;
-  border-style: solid;
-  border-radius: 0.6vw;
-  border-color: `+ focolor + `;
-  margin-top: 4vw;
+height: 8vw;
+border-style: solid;
+border-radius: 0.6vw;
+border-color: `+ focolor + `;
+margin-top: 4vw;
 }
 `, mysheet.cssRules.length);
 
+  mysheet.insertRule(`
+table, th, td {
+table-layout: fixed;
+border-style: solid;
+border-width: 0.1vw;
+border-color: `+ focolor + ";}", mysheet.cssRules.length);
+
+  mysheet.insertRule(`
+hr {
+  border-color: `+ focolor + `;
+  width: 98vw;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}`, mysheet.cssRules.length);
   localStorage.setItem('b', bgcolor);
   localStorage.setItem('f', focolor);
 }
