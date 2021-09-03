@@ -14,7 +14,7 @@ function setcolor() {
   mysheet.insertRule(`
 body, a {
   color: `+ focolor + `;
-  font-family: Font1, Arial, Helvetica, sans-serif;
+  font-family: Font3, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   position: relative;
 }`, mysheet.cssRules.length)

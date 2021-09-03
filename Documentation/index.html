@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
-    class="button3 rbutton">How to supply arguments?</button>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
-    class="button3 rbutton">How to supply arguments?</button>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
+  <button type="button" onclick="location.href='/'"
+    class="button3 rbutton">SuperBot Homepage</button>
+  <button type="button" onclick="location.href='/Documentation'"
+    class="button3 rbutton">Documentation Homepage</button>
+  <button type="button" onclick="location.href='/Documentation/Arguments'"
     class="button3 rbutton">How to supply arguments?</button>
 
   <script src="./script.js"></script>
@@ -253,17 +253,59 @@
       <td class="code">clearsnipe</td>
       <td></td>
       <td>Clears snipe data (deleted messages).</td>
-      <td rowspan="2"></td>
+      <td rowspan="5"></td>
     </tr>
 
     <tr>
       <td class="code">pretend</td>
-      <td>User, Text+</td>
+      <td rowspan="2">User, Text+</td>
       <td>Sends a fake message as the user.</td>
-      <td>Manage webhooks</td>
+      <td rowspan="2">Manage webhooks</td>
+      <td rowspan="8"></td>
+    </tr>
+
+    <tr>
+      <td class="code" style="font-size: 1.9vw;">pretendembed</td>
+      <td>Sends a fake embed as the user. See <a target="_self" href="/Appendices/A1">Appendix A1</a></td>
+    </tr>
+
+    <tr>
+      <td class="code">embed</td>
+      <td rowspan="4">Text+</td>
+      <td>Sends an embed. See <a target="_self" href="/Appendices/A1">Appendix A1</a></td>
+      <td rowspan="4">Embed links</td>
+    </tr>
+
+    <tr>
+      <td class="code">editembed</td>
+      <td>Edits an embed previously sent by<span class="code">embed</span>. See <a target="_self" href="/Appendices/A1">Appendix A1</a></td>
+    </tr>
+
+    <tr>
+      <td class="code small">simpleembed</td>
+      <td>An easier version of<span class="code">embed</span>. See <a target="_self" href="/Appendices/A1#A">Appendix A1 (a)</a></td>
+      <td><span class="code small">simpembed</span><span class="code small">simplembed</span></td>
+    </tr>
+
+    <tr>
+      <td class="code small">quickembed</td>
+      <td>The simplest version of<span class="code">embed</span>. See <a target="_self" href="/Appendices/A1#B">Appendix A1 (b))</a></td>
+      <td rowspan="3"></td>
+    </tr>
+
+    <tr>
+      <td class="code">ett</td>
+      <td>Message</td>
+      <td>Convert a previously sent message to be in the<span class="code">embed</span>format.</td>
       <td></td>
     </tr>
 
+    <tr>
+      <td class="code">tts</td>
+      <td>Text+</td>
+      <td>Sends a message similarly to<span class="code">/tts</span>.</td>
+      <td>Send text-to-speech messages</td>
+    </tr>
   </table>
 </body>
 

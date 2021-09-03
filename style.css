@@ -8,6 +8,11 @@
   src: url("font2.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Font3";
+  src: url("font3.ttf") format("truetype");
+}
+
 .code {
   font-family: Font2, monospace;
   font-size: 2.2vw;
@@ -38,6 +43,10 @@ h3 {
   margin-top: 0.2vw;
   margin-bottom: 0.2vw;
   padding-top: 7vw;
+}
+
+h1,h2,h3 {
+  font-family: Font1;
 }
 
 h3 .code {
@@ -111,7 +120,7 @@ table {
 
 body, a {
   color: #000;
-  font-family: Font1, Arial, Helvetica, sans-serif;
+  font-family: Font3, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   position: relative;
 }

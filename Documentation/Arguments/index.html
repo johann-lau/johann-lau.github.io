@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/'"
-    class="button3 rbutton">Documentation Homepage</button>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/'"
+  <button type="button" onclick="location.href='/'"
     class="button3 rbutton">SuperBot Homepage</button>
-  <button type="button" onclick="location.href='https://johann-lau.github.io/superbot-website/Documentation/Arguments'"
+  <button type="button" onclick="location.href='/Documentation'"
+    class="button3 rbutton">Documentation Homepage</button>
+  <button type="button" onclick="location.href='/Documentation/Arguments'"
     class="button3 rbutton">How to supply arguments?</button>
 
   <script src="../script.js"></script>
@@ -24,7 +24,7 @@
 
   <h3>How to supply <span class="code">text</span>?</h3>
   <p>
-    <span class="code">text</span>is simply a piece of "arbitrary" text which can contain anything but not spaces or
+    <span class="code">text</span>is simply a piece of "arbitrary" text which can contain anything but not spaces, new lines or
     straight double quotes(<span class="code">"</span>). For comparison, these are curved double quotes:
     <span class="code">“</span>and<span class="code">”</span>
     <br>
@@ -38,8 +38,8 @@
 
   <h3>How to supply <span class="code">text*</span>?</h3>
   <p>
-    <span class="code">text*</span>is different from<span class="code">text</span>. You can provide as many arguments
-    as you want, 1, 2 or 10, separated by spaces. In fact, you can provide no arguments at all (by providing nothing).
+    <span class="code">text*</span>allows you to provide as many arguments
+    as you want, separated by spaces. In fact, you can provide no arguments at all (by providing nothing).
     <br>
     Examples are<span class="inverted code">argument-1, argument-2, argument 3</span>,<span
       class="inverted code">only-argument</span>.
@@ -51,8 +51,8 @@
 
   <h3>How to supply <span class="code">text+</span>?</h3>
   <p>
-    <span class="code">text+</span>allows you to supply any character, including spaces and quotes. This is always the
-    last argument of each command.
+    <span class="code">text+</span>allows you to supply any character, including spaces, extra lines and
+    quotes. This is always the last argument of each command.
     <br>
     You do not need to wrap the argument in double quotes. If you do so, they will be parsed with the quotes.
   </p>
